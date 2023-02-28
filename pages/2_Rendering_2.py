@@ -12,7 +12,7 @@ if 'favorite_color' not in st.session_state:
 def confirm_color():
     st.session_state.favorite_color = st.session_state.color_picker
 
-name = st.text_input('Name:')
+name = st.text_input('Name: ')
 if name != '':
     st.write(f'Hi, {name}! Nice to meet you.')
     st.write(f'What\'s your favorite color?')
