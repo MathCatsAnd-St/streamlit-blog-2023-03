@@ -5,7 +5,7 @@ import io
 import page_freshener
 page_freshener.reset('5F2')
 
-file = st.file_uploader("Choose a file:", type='css')
+file = st.file_uploader("Choose a file:", type=['css','py'])
 
 if file != None:
     bytes_object = file.getvalue()
@@ -22,7 +22,7 @@ with st.expander('Show me'):
 import streamlit as st
 import io
 
-file = st.file_uploader("Choose a file:", type='css')
+file = st.file_uploader("Choose a file:", type=['css','py'])
 
 if file != None:
     bytes_object = file.getvalue()

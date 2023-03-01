@@ -4,12 +4,16 @@ import streamlit as st
 import page_freshener
 page_freshener.reset('4W2')
 
-image = './app/static/cat_background.jpg'
+st.title('Boop! :ghost:')
+
+image = './app/static/cat-background.png'
 
 css = f'''
 <style>
     .stApp {{
         background-image: url({image});
+        background-size: cover;
+
     }}
     .stApp > header {{
         background-color: transparent;
@@ -26,12 +30,16 @@ with st.expander('Show me'):
     st.code('''
 import streamlit as st
 
-image = './app/static/cat_background.jpg'
+st.title('Boop! :ghost:')
+
+image = './app/static/cat-background.png'
 
 css = f\'''
 <style>
     .stApp {{
         background-image: url({image});
+        background-size: cover;
+
     }}
     .stApp > header {{
         background-color: transparent;

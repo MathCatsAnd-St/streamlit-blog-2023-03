@@ -5,10 +5,11 @@ import pandas as pd
 import page_freshener
 page_freshener.reset('5F1')
 
-file = st.file_uploader("Choose a file:", key="loader", on_change=load_data, type='csv')
+file = st.file_uploader("Choose a file:", key="loader", type='csv')
 
 if file != None:
     df = pd.read_csv(file)
+    st.write(df)
 
 
 
@@ -19,8 +20,9 @@ with st.expander('Show me'):
 import streamlit as st
 import pandas as pd
 
-file = st.file_uploader("Choose a file:", key="loader", on_change=load_data, type='csv')
+file = st.file_uploader("Choose a file:", key="loader", type='csv')
 
 if file != None:
     df = pd.read_csv(file)
+    st.write(df)
 ''')
