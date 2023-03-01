@@ -6,7 +6,7 @@ page_freshener.reset('6K2')
 
 st.session_state.clear()
 
-st.slider('Test', 0, 10, value=0, key='my_key')
+st.slider('Test', 0, 10, key='my_key')
 
 
 
